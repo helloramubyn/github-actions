@@ -1,6 +1,6 @@
 name: Without- Actions
 on:
- workflow_dispatch
+ workflow_dispatch:
 jobs:
   manual-setup:
       runs-on: ubuntu-latest
