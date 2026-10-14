@@ -11,20 +11,16 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Java 21
-        uses: actions/setup-java@v5
+        uses: actions/setup-java@v4
         with:
           java-version: '21'
           distribution: temurin
           cache: maven
+
+      - name: Verify Java installation
+        run: |
+          java -version
+          echo "JAVA_HOME: $JAVA_HOME"
+
       - name: Build the project
         run: mvn package -DskipTests
-
-# ════════════════════════════════════════════════════════════
-# Same result as 05.1.1 — but:
-#   → actions/checkout@v4 replaces 5 lines of git commands
-#   → actions/setup-java@v4 replaces 10 lines of manual install
-#   → Java version is pinned and consistent
-#   → Maven cache is handled automatically
-#   → Works on Linux, Windows and macOS
-#   → Maintained by GitHub — always up to date
-# ════════════════════════════════════════════════════════════
