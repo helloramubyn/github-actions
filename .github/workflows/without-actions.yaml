@@ -10,7 +10,7 @@ jobs:
          echo "cloning"
          git clone https://github.com/${{ github.repository }}.git .
           echo "list of files after cloning"
-         ls - la  
+         ls -la  
          echo "========================"
          echo "Working directory"
          pwd
