@@ -14,3 +14,8 @@ jobs:
          echo "========================"
          echo "Working directory"
          pwd
+      - name: Verifying Java Software
+        run: |
+         echo "Java Version"
+         java -version
+   
