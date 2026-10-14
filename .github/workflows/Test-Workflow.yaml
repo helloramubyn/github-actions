@@ -12,5 +12,5 @@ jobs:
       - name: list of files
         run: |
           echo "List of files in the repo"
-          ls - R
+          ls -R
    
