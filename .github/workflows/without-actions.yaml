@@ -6,8 +6,8 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - name: Manually cloning the repo
-        runs: |
-         echo "cloining"
+        run: |
+         echo "cloning"
          git clone https://github.com/${{ github.repository}}.git .
           echo "list of files after cloning"
          ls - la  
