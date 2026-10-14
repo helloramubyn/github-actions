@@ -1,4 +1,4 @@
-name: Without- Actions
+name: Without-Actions
 on:
  workflow_dispatch:
 jobs:
