@@ -1,4 +1,4 @@
-name: i27Academy Devops Dashboard- CI
+name: Devops Dashboard- CI
 on: 
   push: 
     branches: 
